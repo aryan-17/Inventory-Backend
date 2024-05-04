@@ -46,35 +46,35 @@ This repository contains the backend code for an Inventory Management Applicatio
 
 1. User Authentication
 
-   POST /api/auth/register: Register a new user.
+   - **POST** /api/auth/register: Register a new user.
 
-   POST /api/auth/login: Authenticate a user and generate a JWT token.
+   - **POST** /api/auth/login: Authenticate a user and generate a JWT token.
 
-   GET /api/auth/logout: Log out the current user.
+   - **GET** /api/auth/logout: Log out the current user.
    
-   GET /api/auth/getuser: Get details of the currently logged-in user (Protected Route).
+   - **GET** /api/auth/getuser: Get details of the currently logged-in user (Protected Route).
    
-   GET /api/auth/loggedin: Check if a user is logged in.
+   - **GET** /api/auth/loggedin: Check if a user is logged in.
    
-   PATCH /api/auth/updateuser: Update user details (Protected Route).
+   - **PATCH** /api/auth/updateuser: Update user details (Protected Route).
    
-   PATCH /api/auth/changepassword: Change user password (Protected Route).
+   - **PATCH** /api/auth/changepassword: Change user password (Protected Route).
    
-   POST /api/auth/forgotpassword: Send reset password link to user's email.
+   - **POST** /api/auth/forgotpassword: Send reset password link to user's email.
    
-   PUT /api/auth/resetpassword/:resetToken: Reset user password using reset token.
+   - **PUT** /api/auth/resetpassword/:resetToken: Reset user password using reset token.
 
 2. Inventory Management
 
-   POST /api/products: Create a new product (Protected Route).
+   - **POST** /api/products: Create a new product (Protected Route).
 
-   GET /api/products: Get all products (Protected Route).
+   - **GET** /api/products: Get all products (Protected Route).
 
-   GET /api/products/:id: Get a product by ID (Protected Route).
+   - **GET** /api/products/:id: Get a product by ID (Protected Route).
 
-   PATCH /api/products/:id: Update a product by ID (Protected Route).
+   - **PATCH** /api/products/:id: Update a product by ID (Protected Route).
 
-   DELETE /api/products/:id: Delete a product by ID (Protected Route).
+   - **DELETE** /api/products/:id: Delete a product by ID (Protected Route).
 
 3. Middlewares
 
